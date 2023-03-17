@@ -12,14 +12,16 @@ const renderList = () => {
     for (let i = itemList.length - 1; i > 0; i--) {
         listContainer.innerHTML += `
             <div class="list-item">
-                <div class="item-name">
-                <label class="label">
-                <input type="checkbox" name="checkbox" value="text">
-              </label>${itemList[i]}
-                </div>
-                <div class="item-actions">
-                    <button onclick="editItem(${i})"><img src="edit.png" alt="" width="35" height="30"></button>
-                    <button onclick="deleteItem(${i})"><img src="remove.png" alt="" width="35" height="30"></button>
+                <div class="grid-container1">    
+                    <div class="item-name">
+                        <label class="label">
+                        <input type="checkbox" name="checkbox" value="text">
+                        </label>${itemList[i]}
+                    </div>
+                    <div class="item-actions">
+                        <button onclick="editItem(${i})"><img src="edit.png" alt="" width="35" height="30"></button>
+                        <button onclick="deleteItem(${i})"><img src="remove.png" alt="" width="35" height="30"></button>
+                    </div>
                 </div>
             </div>
         `;
