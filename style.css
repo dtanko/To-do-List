@@ -64,8 +64,9 @@ body{
 }
 .item-actions{
     position: absolute;
-  right: 100px;
+  left: 70%;
   top: auto;
+  display: flex;
   
 }
 .action-wrapper button:hover, .item-actions button:hover{
@@ -77,10 +78,10 @@ body{
 .list-item{
     background-color: white;
     border-radius: 25px;
-    border: gray 1px solid;  
-    width: 90%;
+    border: none;  
+    width: 100%;
     margin: 15px;
-    margin-left: 40px;
+    /* margin-left: px; */
     display: flex;
     align-items: left;
     justify-content: left;
@@ -96,5 +97,9 @@ body{
 }
 .grid-container{
     display: grid;
-    grid-template-columns: auto 30px
+    grid-template-columns: auto 3%;
+}
+.grid-container1{
+    display: grid;
+    grid-template-columns: auto auto;
 }
